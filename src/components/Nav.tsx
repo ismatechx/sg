@@ -71,10 +71,10 @@ export default function Nav() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="tel:+919488228603"
+            href="/login"
             className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors duration-150"
           >
-            +91 94882 28603
+            Sign in
           </a>
           <a
             href="#contact"
@@ -130,10 +130,11 @@ export default function Nav() {
           </ul>
           <div className="mt-4 pt-4 border-t border-zinc-100 flex flex-col gap-2">
             <a
-              href="tel:+919488228603"
-              className="text-sm text-zinc-500 px-3"
+              href="/login"
+              onClick={() => setMenuOpen(false)}
+              className="text-sm text-zinc-500 px-3 py-2 hover:text-zinc-900"
             >
-              +91 94882 28603
+              Sign in
             </a>
             <a
               href="#contact"
